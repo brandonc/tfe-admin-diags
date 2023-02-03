@@ -8,12 +8,7 @@ Usage:
 
 or
 
-`$ chmod +x tfediags.sh`
-`$ ./tfediags <hostname>`
-
-or
-
-`curl https://raw.githubusercontent.com/brandonc/tfediags/v0.1.0/tfediags.sh | bash -s -- <hostname>`
+`$ curl https://raw.githubusercontent.com/brandonc/tfediags/v0.2.0/tfediags.sh | bash -s -- <hostname>`
 
 The script will write a file named `tfe-diags-20230203_105511Z.tar.gz` to the current directory which you can send to Terraform Enterprise account or support representative.
 
