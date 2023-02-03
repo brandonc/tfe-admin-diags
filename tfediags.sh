@@ -59,7 +59,7 @@ fi
 path=$(curl --fail -s -H "Authorization: Bearer $token" "https://$hostname/.well-known/terraform.json" | jq -r '."tfe.v2"')
 debug "TFE service discovery tfe.v2: $path"
 
-diagid="tfe-admin-diags-$(date +%Y%m%d_%H%M%SZ)"
+diagid="tfe-diags-$(date +%Y%m%d_%H%M%SZ)"
 mkdir -p "$diagid"
 
 # Fetch terraform versions
