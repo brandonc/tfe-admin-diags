@@ -76,8 +76,6 @@ done
 # ...and concatenate together
 jq -n 'reduce inputs.data as $d (.; . + $d)' "$diagid"/*.json > "$diagid/versions.json"
 
-rm -rf "$diagid/versions-*.json"
-
 # Archive source diag folder
 info "Creating tar archive \"$diagid.tar.gz\"..."
 tar -czf "$diagid.tar.gz" "$diagid"
